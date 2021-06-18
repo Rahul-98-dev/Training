@@ -1,0 +1,10 @@
+Sports tournament project.
+1. The main objective of the project is to create Sports tournament app that allows admin (the only user also single entity/single admin as mentioned in the question ) to 
+* a) first login,then adding players by providing  players with register form. 
+* b) It would enable admin to generate match event for the badminton tournament.
+*  c)tournament is handled seperately for boys and girls( distinguised at the time of registering itself). so list of seperate players are fetched
+* d)USP-  We have provided battleground option where all the match score is updated and algorithm is implemented to automatically distinguise the winnerby comparing the final scores.
+* e)A record of all the matches is maintained and it is updated as soon as new match score details are fetched from the battleground itslf.
+* f)Usp - provided seperate tab for  automatic declaring tournament winner based on the final matchid scores (gold medals and silver medals seperately).
+*g)Usp - implemented database in bidirectional way so that if one table is updated then it is reflected in other tables also.
+*h) admin can dissqualify any player any time .

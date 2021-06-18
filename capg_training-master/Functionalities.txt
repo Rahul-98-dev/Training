@@ -1,0 +1,13 @@
+0. login
+1. AddEvent.
+2. add players------
+3. disqualify player
+4. Matchrecord
+5. Registeration.
+6. BattleGround.(validation of scores remaining))
+7. match fixtures.//
+8. see fixtures//
+9. medal (reaminig to be done using named query)
+
+10select *from match where matchid = 15 and result=winner;
+ctrl+shift+o

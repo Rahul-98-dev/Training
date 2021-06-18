@@ -1,0 +1,245 @@
+https://644639328406.signin.aws.amazon.com/console
+wget http://archive.https://ajaymulesoftbucket.s3.amazonaws.com/TestAWSProject.warapache.org/dist/tomcat/tomcat-8/v8.0.23/bin/apache-tomcat-8.0.23.tar.gz
+https://ajaymulesoftbucket.s3.amazonaws.com/TestAWSProject.war
+....................................................................................................
+Using username "ec2-user".
+Authenticating with public key "imported-openssh-key"
+Last login: Fri Jun 11 04:44:32 2021 from 49.35.237.76
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+[ec2-user@ip-10-0-0-14 ~]$ sudo su
+[root@ip-10-0-0-14 ec2-user]# cd [root@ip-10-0-0-14 ec2-user]# cd
+bash: cd: [root@ip-10-0-0-14: No such file or directory
+[root@ip-10-0-0-14 ec2-user]# ls
+apache-tomcat-8.0.23  apache-tomcat-8.0.23.tar.gz
+[root@ip-10-0-0-14 ec2-user]# cd apache-tomcat-8.0.23
+[root@ip-10-0-0-14 apache-tomcat-8.0.23]# cd bin
+[root@ip-10-0-0-14 bin]# ./startup.sh
+Using CATALINA_BASE:   /home/ec2-user/apache-tomcat-8.0.23
+Using CATALINA_HOME:   /home/ec2-user/apache-tomcat-8.0.23
+Using CATALINA_TMPDIR: /home/ec2-user/apache-tomcat-8.0.23/temp
+Using JRE_HOME:        /
+Using CLASSPATH:       /home/ec2-user/apache-tomcat-8.0.23/bin/bootstrap.jar:/home/ec2-user/apache-tomcat-8.0.23/bin/tomcat-juli.jar
+Tomcat started.
+[root@ip-10-0-0-14 bin]# cd ..
+[root@ip-10-0-0-14 apache-tomcat-8.0.23]# cd ..
+[root@ip-10-0-0-14 ec2-user]# wget https://ajaymulesoftbucket.s3.amazonaws.com/TestAWSProject.war
+--2021-06-11 06:04:16--  https://ajaymulesoftbucket.s3.amazonaws.com/TestAWSProject.war
+Resolving ajaymulesoftbucket.s3.amazonaws.com (ajaymulesoftbucket.s3.amazonaws.com)... 52.216.160.147
+Connecting to ajaymulesoftbucket.s3.amazonaws.com (ajaymulesoftbucket.s3.amazonaws.com)|52.216.160.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 17406 (17K) [binary/octet-stream]
+Saving to: ‘TestAWSProject.war’
+
+100%[======================================>] 17,406      --.-K/s   in 0.001s
+
+2021-06-11 06:04:16 (29.9 MB/s) - ‘TestAWSProject.war’ saved [17406/17406]
+
+[root@ip-10-0-0-14 ec2-user]# ls
+apache-tomcat-8.0.23  apache-tomcat-8.0.23.tar.gz  TestAWSProject.war
+[root@ip-10-0-0-14 ec2-user]# cd apache-tomcat-8.0.23
+[root@ip-10-0-0-14 apache-tomcat-8.0.23]# ls
+bin   lib      logs    RELEASE-NOTES  temp     work
+conf  LICENSE  NOTICE  RUNNING.txt    webapps
+[root@ip-10-0-0-14 apache-tomcat-8.0.23]# cd webapps
+[root@ip-10-0-0-14 webapps]# wget https://ajaymulesoftbucket.s3.amazonaws.com/TestAWSProject.war
+--2021-06-11 06:11:28--  https://ajaymulesoftbucket.s3.amazonaws.com/TestAWSProject.war
+Resolving ajaymulesoftbucket.s3.amazonaws.com (ajaymulesoftbucket.s3.amazonaws.com)... 52.216.101.19
+Connecting to ajaymulesoftbucket.s3.amazonaws.com (ajaymulesoftbucket.s3.amazonaws.com)|52.216.101.19|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 17406 (17K) [binary/octet-stream]
+Saving to: ‘TestAWSProject.war’
+
+100%[======================================>] 17,406      --.-K/s   in 0.001s
+
+2021-06-11 06:11:29 (23.3 MB/s) - ‘TestAWSProject.war’ saved [17406/17406]
+
+[root@ip-10-0-0-14 webapps]# ls
+docs  examples  host-manager  manager  ROOT  TestAWSProject  TestAWSProject.war
+[root@ip-10-0-0-14 webapps]# cd ..
+[root@ip-10-0-0-14 apache-tomcat-8.0.23]# cd bin
+[root@ip-10-0-0-14 bin]# ls
+bootstrap.jar                 daemon.sh         startup.sh
+catalina.bat                  digest.bat        tomcat-juli.jar
+catalina.sh                   digest.sh         tomcat-native.tar.gz
+catalina-tasks.xml            setclasspath.bat  tool-wrapper.bat
+commons-daemon.jar            setclasspath.sh   tool-wrapper.sh
+commons-daemon-native.tar.gz  shutdown.bat      version.bat
+configtest.bat                shutdown.sh       version.sh
+configtest.sh                 startup.bat
+[root@ip-10-0-0-14 bin]# ./shutdown.sh
+Using CATALINA_BASE:   /home/ec2-user/apache-tomcat-8.0.23
+Using CATALINA_HOME:   /home/ec2-user/apache-tomcat-8.0.23
+Using CATALINA_TMPDIR: /home/ec2-user/apache-tomcat-8.0.23/temp
+Using JRE_HOME:        /
+Using CLASSPATH:       /home/ec2-user/apache-tomcat-8.0.23/bin/bootstrap.jar:/home/ec2-user/apache-tomcat-8.0.23/bin/tomcat-juli.jar
+[root@ip-10-0-0-14 bin]# ./startup.sh
+Using CATALINA_BASE:   /home/ec2-user/apache-tomcat-8.0.23
+Using CATALINA_HOME:   /home/ec2-user/apache-tomcat-8.0.23
+Using CATALINA_TMPDIR: /home/ec2-user/apache-tomcat-8.0.23/temp
+Using JRE_HOME:        /
+Using CLASSPATH:       /home/ec2-user/apache-tomcat-8.0.23/bin/bootstrap.jar:/home/ec2-user/apache-tomcat-8.0.23/bin/tomcat-juli.jar
+Tomcat started.
+[root@ip-10-0-0-14 bin]# ./startup.shUsing username "ec2-user".
+Last login: Fri Jun 11 04:44:32 2021 from 49.35.237.76
+bash: ./startup.shUsing: No such file or directory
+[root@ip-10-0-0-14 bin]# Authenticating with public key "imported-openssh-key"
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+[ec2-user@ip-10-0-0-14 ~]$ sudo su
+[root@ip-10-0-0-14 ec2-user]# cd [root@ip-10-0-0-14 ec2-user]# cd
+bash: cd: [root@ip-10-0-0-14: No such file or directory
+[root@ip-10-0-0-14 ec2-user]# ls
+bash: Authenticating: command not found
+[root@ip-10-0-0-14 bin]# Last login: Fri Jun 11 04:44:32 2021 from 49.35.237.76
+apache-tomcat-8.0.23  apache-tomcat-8.0.23.tar.gz
+[root@ip-10-0-0-14 ec2-user]# cd apache-tomcat-8.0.23
+[root@ip-10-0-0-14 apache-tomcat-8.0.23]# cd bin
+[root@ip-10-0-0-14 bin]# ./startup.sh
+Using CATALINA_BASE:   /home/ec2-user/apache-tomcat-8.0.23
+Using CATALINA_HOME:   /home/ec2-user/apache-tomcat-8.0.23
+Using CATALINA_TMPDIR: /home/ec2-user/apache-tomcat-8.0.23/temp
+Using JRE_HOME:        /
+Using CLASSPATH:       /home/ec2-user/apache-tomcat-8.0.23/bin/bootstrap.jar:/home/ec2-user/apache-tomcat-8.0.23/bin/tomcat-juli.jar
+Tomcat started.
+bash: Last: command not found
+[root@ip-10-0-0-14 bin]#
+[root@ip-10-0-0-14 bin]#        __|  __|_  )
+bash: syntax error near unexpected token `)'
+[root@ip-10-0-0-14 bin]#        _|  (     /   Amazon Linux 2 AMI
+>       ___|\___|___|
+>
+> https://aws.amazon.com/amazon-linux-2/
+> [ec2-user@ip-10-0-0-14 ~]$ sudo su
+> [root@ip-10-0-0-14 ec2-user]# cd [root@ip-10-0-0-14 ec2-user]# cd
+> bash: cd: [root@ip-10-0-0-14: No such file or directory
+> [root@ip-10-0-0-14 ec2-user]# ls
+> apache-tomcat-8.0.23  apache-tomcat-8.0.23.tar.gz
+> [root@ip-10-0-0-14 ec2-user]# cd apache-tomcat-8.0.23
+> [root@ip-10-0-0-14 apache-tomcat-8.0.23]# cd bin
+> [root@ip-10-0-0-14 bin]# ./startup.sh
+> Using CATALINA_BASE:   /home/ec2-user/apache-tomcat-8.0.23
+> Using CATALINA_HOME:   /home/ec2-user/apache-tomcat-8.0.23
+> Using CATALINA_TMPDIR: /home/ec2-user/apache-tomcat-8.0.23/temp
+> Using JRE_HOME:        /
+> Using CLASSPATH:       /home/ec2-user/apache-tomcat-8.0.23/bin/bootstrap.jar:/home/ec2-user/apache-tomcat-8.0.23/bin/tomcat-juli.jar
+> Tomcat started.
+> [root@ip-10-0-0-14 bin]# cd ..
+> [root@ip-10-0-0-14 apache-tomcat-8.0.23]# cd ..
+> [root@ip-10-0-0-14 ec2-user]# wget https://ajaymulesoftbucket.s3.amazonaws.com/TestAWSProject.war
+> --2021-06-11 06:04:16--  https://ajaymulesoftbucket.s3.amazonaws.com/TestAWSProject.war
+> Resolving ajaymulesoftbucket.s3.amazonaws.com (ajaymulesoftbucket.s3.amazonaws.com)... 52.216.160.147
+bash: syntax error near unexpected token `('
+[root@ip-10-0-0-14 bin]# Connecting to ajaymulesoftbucket.s3.amazonaws.com (ajaymulesoftbucket.s3.amazonaws.com)|52.216.160.147|:443... connected.
+bash: syntax error near unexpected token `('
+[root@ip-10-0-0-14 bin]# HTTP request sent, awaiting response... 200 OK
+bash: HTTP: command not found
+[root@ip-10-0-0-14 bin]# Length: 17406 (17K) [binary/octet-stream]
+bash: syntax error near unexpected token `('
+[root@ip-10-0-0-14 bin]# Saving to: ‘TestAWSProject.war’
+bash: Saving: command not found
+[root@ip-10-0-0-14 bin]#
+[root@ip-10-0-0-14 bin]# 100%[======================================>] 17,406      --.-K/s   in 0.001s
+bash: 100%[======================================: command not found
+[root@ip-10-0-0-14 bin]#
+[root@ip-10-0-0-14 bin]# 2021-06-11 06:04:16 (29.9 MB/s) - ‘TestAWSProject.war’ saved [17406/17406]
+bash: syntax error near unexpected token `('
+[root@ip-10-0-0-14 bin]#
+[root@ip-10-0-0-14 bin]# [root@ip-10-0-0-14 ec2-user]# ls
+bash: [root@ip-10-0-0-14: command not found
+[root@ip-10-0-0-14 bin]# apache-tomcat-8.0.23  apache-tomcat-8.0.23.tar.gz  TestAWSProject.war
+bash: apache-tomcat-8.0.23: command not found
+[root@ip-10-0-0-14 bin]# [root@ip-10-0-0-14 ec2-user]# cd apache-tomcat-8.0.23
+bash: [root@ip-10-0-0-14: command not found
+[root@ip-10-0-0-14 bin]# [root@ip-10-0-0-14 apache-tomcat-8.0.23]# ls
+bash: [root@ip-10-0-0-14: command not found
+[root@ip-10-0-0-14 bin]# bin   lib      logs    RELEASE-NOTES  temp     work
+bash: bin: command not found
+[root@ip-10-0-0-14 bin]# conf  LICENSE  NOTICE  RUNNING.txt    webapps
+bash: conf: command not found
+[root@ip-10-0-0-14 bin]# [root@ip-10-0-0-14 apache-tomcat-8.0.23]# cd webapps
+bash: [root@ip-10-0-0-14: command not found
+[root@ip-10-0-0-14 bin]# [root@ip-10-0-0-14 webapps]# wget https://ajaymulesoftbucket.s3.amazonaws.com/TestAWSProject.war
+bash: [root@ip-10-0-0-14: command not found
+[root@ip-10-0-0-14 bin]# --2021-06-11 06:11:28--  https://ajaymulesoftbucket.s3.amazonaws.com/TestAWSProject.war
+bash: --2021-06-11: command not found
+[root@ip-10-0-0-14 bin]# Resolving ajaymulesoftbucket.s3.amazonaws.com (ajaymulesoftbucket.s3.amazonaws.com)... 52.216.101.19
+bash: syntax error near unexpected token `('
+[root@ip-10-0-0-14 bin]# Connecting to ajaymulesoftbucket.s3.amazonaws.com (ajaymulesoftbucket.s3.amazonaws.com)|52.216.101.19|:443... connected.
+bash: syntax error near unexpected token `('
+[root@ip-10-0-0-14 bin]# HTTP request sent, awaiting response... 200 OK
+bash: HTTP: command not found
+[root@ip-10-0-0-14 bin]# Length: 17406 (17K) [binary/octet-stream]
+bash: syntax error near unexpected token `('
+[root@ip-10-0-0-14 bin]# Saving to: ‘TestAWSProject.war’
+bash: Saving: command not found
+[root@ip-10-0-0-14 bin]#
+[root@ip-10-0-0-14 bin]# 100%[======================================>] 17,406      --.-K/s   in 0.001s
+bash: 100%[======================================: command not found
+[root@ip-10-0-0-14 bin]#
+[root@ip-10-0-0-14 bin]# 2021-06-11 06:11:29 (23.3 MB/s) - ‘TestAWSProject.war’ saved [17406/17406]
+bash: syntax error near unexpected token `('
+[root@ip-10-0-0-14 bin]#
+[root@ip-10-0-0-14 bin]# [root@ip-10-0-0-14 webapps]# ls
+bash: [root@ip-10-0-0-14: command not found
+[root@ip-10-0-0-14 bin]# docs  examples  host-manager  manager  ROOT  TestAWSProject  TestAWSProject.war
+bash: docs: command not found
+[root@ip-10-0-0-14 bin]# [root@ip-10-0-0-14 webapps]# cd ..
+bash: [root@ip-10-0-0-14: command not found
+[root@ip-10-0-0-14 bin]# [root@ip-10-0-0-14 apache-tomcat-8.0.23]# cd bin
+bash: [root@ip-10-0-0-14: command not found
+[root@ip-10-0-0-14 bin]# [root@ip-10-0-0-14 bin]# ls
+bash: [root@ip-10-0-0-14: command not found
+[root@ip-10-0-0-14 bin]# bootstrap.jar                 daemon.sh         startup.sh
+bash: bootstrap.jar: command not found
+[root@ip-10-0-0-14 bin]# catalina.bat                  digest.bat        tomcat-juli.jar
+bash: catalina.bat: command not found
+[root@ip-10-0-0-14 bin]# catalina.sh                   digest.sh         tomcat-native.tar.gz
+bash: catalina.sh: command not found
+[root@ip-10-0-0-14 bin]# catalina-tasks.xml            setclasspath.bat  tool-wrapper.bat
+bash: catalina-tasks.xml: command not found
+[root@ip-10-0-0-14 bin]# commons-daemon.jar            setclasspath.sh   tool-wrapper.sh
+bash: commons-daemon.jar: command not found
+[root@ip-10-0-0-14 bin]# commons-daemon-native.tar.gz  shutdown.bat      version.bat
+bash: commons-daemon-native.tar.gz: command not found
+[root@ip-10-0-0-14 bin]# configtest.bat                shutdown.sh       version.sh
+bash: configtest.bat: command not found
+[root@ip-10-0-0-14 bin]# configtest.sh                 startup.bat
+bash: configtest.sh: command not found
+[root@ip-10-0-0-14 bin]# [root@ip-10-0-0-14 bin]# ./shutdown.sh
+bash: [root@ip-10-0-0-14: command not found
+[root@ip-10-0-0-14 bin]# Using CATALINA_BASE:   /home/ec2-user/apache-tomcat-8.0.23
+bash: Using: command not found
+[root@ip-10-0-0-14 bin]# Using CATALINA_HOME:   /home/ec2-user/apache-tomcat-8.0.23
+bash: Using: command not found
+[root@ip-10-0-0-14 bin]# Using CATALINA_TMPDIR: /home/ec2-user/apache-tomcat-8.0.23/temp
+bash: Using: command not found
+[root@ip-10-0-0-14 bin]# Using JRE_HOME:        /
+bash: Using: command not found
+[root@ip-10-0-0-14 bin]# Using CLASSPATH:       /home/ec2-user/apache-tomcat-8.0.23/bin/bootstrap.jar:/home/ec2-user/apache-tomcat-8.0.23/bin/tomcat-juli.jar
+bash: Using: command not found
+[root@ip-10-0-0-14 bin]# [root@ip-10-0-0-14 bin]# ./startup.sh
+bash: [root@ip-10-0-0-14: command not found
+[root@ip-10-0-0-14 bin]# Using CATALINA_BASE:   /home/ec2-user/apache-tomcat-8.0.23
+bash: Using: command not found
+[root@ip-10-0-0-14 bin]# Using CATALINA_HOME:   /home/ec2-user/apache-tomcat-8.0.23
+bash: Using: command not found
+[root@ip-10-0-0-14 bin]# Using CATALINA_TMPDIR: /home/ec2-user/apache-tomcat-8.0.23/temp
+bash: Using: command not found
+[root@ip-10-0-0-14 bin]# Using JRE_HOME:        /
+bash: Using: command not found
+[root@ip-10-0-0-14 bin]# Using CLASSPATH:       /home/ec2-user/apache-tomcat-8.0.23/bin/bootstrap.jar:/home/ec2-user/apache-tomcat-8.0.23/bin/tomcat-juli.jar
+bash: Using: command not found
+[root@ip-10-0-0-14 bin]# Tomcat started.
+bash: Tomcat: command not found
+[root@ip-10-0-0-14 bin]# [root@ip-10-0-0-14 bin]# ./startup.sh
+bash: [root@ip-10-0-0-14: command not found
+[root@ip-10-0-0-14 bin]#
